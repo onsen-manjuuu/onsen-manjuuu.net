@@ -1,10 +1,16 @@
+
+
 .container{
-    max-width: 36rem;
+    max-width: 80rem;
     padding: 0 1rem;
-    margin: 4rem 6rem;
+    margin: 4rem 15rem;
     font-family: "Gill Sans", sans-serif;;
 }
 
 .header{
-    font-size:1.5rem
+    font-size:2rem;
+    font-weight: 300;
+    letter-spacing: -0.1rem;
+
 }
+
