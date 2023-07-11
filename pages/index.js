@@ -4,6 +4,7 @@ import Head from 'next/head'
 import styles from '../styles/Home.module.css'
 import Link from 'next/link'
 
+
 export default function Home(){
   return (
   <Layout>
@@ -12,9 +13,9 @@ export default function Home(){
     </Head>
     <div className={styles.contentsList}>
       <ul>
-        <li>blog</li>
+        <li><Link href="blog">blog</Link></li>
         <li><Link href="library">library</Link></li>
-        <li>garally</li>
+        <li>gallery</li>
       </ul>
     </div>
   </Layout>

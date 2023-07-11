@@ -1,7 +1,7 @@
 import Layout from '../components/layout'
 import Head from 'next/head'
 
-export default function blogList() {
+export default function Library() {
     return (
         <Layout>
             <Head>
