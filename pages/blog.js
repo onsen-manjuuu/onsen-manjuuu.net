@@ -1,7 +1,8 @@
 import { getSortedPostsData } from '../lib/posts'
 import Layout from '../components/layout';
 import styles from '../styles/bloglist.module.css'
-
+import Link from 'next/link';
+import Date from '../components/date';
 
 export async function getStaticProps() {
     const allPostsData = getSortedPostsData();
@@ -20,12 +21,14 @@ export default function blogList({allPostsData}) {
         <ul className={styles.contentsList}>
         {allPostsData.map(({id, date, title}) => (
             <li className = {styles.contentsList} key={id}>
-            {title}
+            <Link href={`/posts/${id}`}>{title}</Link>
             <br />
             <div className = {styles.contentsAdditional}>
+                <small>
                 {id}
                 <br />
-                {date}
+                    <Date dateString={date} />
+                </small>
             </div>
                 </li>
         ))}
