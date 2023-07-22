@@ -10,6 +10,7 @@ export default function Home(){
   <Layout>
     <Head>
       <title>onsen-manjuu.net</title>
+      <meta>onsen_manjuuuのサイト</meta>
     </Head>
     <div className={styles.contentsList}>
       <ul>
